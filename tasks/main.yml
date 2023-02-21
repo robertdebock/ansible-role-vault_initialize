@@ -67,16 +67,18 @@
 - name: Show initialize information
   when:
     - vault_initialize_show_information
-    - vault_initialize_status is defined
-    - vault_initialize_status.unseal_keys_b64 is defined
-    - vault_initialize_status.root_token is defined
+    - vault_initialize is defined
   block:
     - name: Show root_token
       ansible.builtin.debug:
-        msg: "{{ vault_initialize_status.root_token }}"
+        msg: "{{ vault_initialize.root_token }}"
       run_once: yes
+      when:
+        - vault_initialize.root_token is defined
 
     - name: Show unseal_keys
       ansible.builtin.debug:
-        msg: "{{ vault_initialize_status.unseal_keys_b64 }}"
+        msg: "{{ vault_initialize.unseal_keys_b64 }}"
       run_once: yes
+      when:
+        - vault_initialize.unseal_keys_b64 is defined
