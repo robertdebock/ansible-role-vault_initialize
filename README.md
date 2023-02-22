@@ -4,7 +4,7 @@ Initialize and unseal HashiCorp Vault.
 
 |GitHub|GitLab|Quality|Downloads|Version|
 |------|------|-------|---------|-------|
-|[![github](https://github.com/robertdebock/ansible-role-vault_initialize/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-vault_initialize/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-vault_initialize/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-vault_initialize)|[![quality](https://img.shields.io/ansible/quality/)](https://galaxy.ansible.com/robertdebock/vault_initialize)|[![downloads](https://img.shields.io/ansible/role/d/)](https://galaxy.ansible.com/robertdebock/vault_initialize)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-vault_initialize.svg)](https://github.com/robertdebock/ansible-role-vault_initialize/releases/)|
+|[![github](https://github.com/robertdebock/ansible-role-vault_initialize/workflows/Ansible%20Molecule/badge.svg)](https://github.com/robertdebock/ansible-role-vault_initialize/actions)|[![gitlab](https://gitlab.com/robertdebock-iac/ansible-role-vault_initialize/badges/master/pipeline.svg)](https://gitlab.com/robertdebock-iac/ansible-role-vault_initialize)|[![quality](https://img.shields.io/ansible/quality/61578)](https://galaxy.ansible.com/robertdebock/vault_initialize)|[![downloads](https://img.shields.io/ansible/role/d/61578)](https://galaxy.ansible.com/robertdebock/vault_initialize)|[![Version](https://img.shields.io/github/release/robertdebock/ansible-role-vault_initialize.svg)](https://github.com/robertdebock/ansible-role-vault_initialize/releases/)|
 
 ## [Example Playbook](#example-playbook)
 
