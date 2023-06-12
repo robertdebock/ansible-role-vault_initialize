@@ -5,4 +5,4 @@
 repository:
   description: Initialize and unseal HashiCorp Vault.
   homepage: https://robertdebock.nl/
-  topics: vaultinitialize, ansible, molecule, tox, playbook
+  topics: vaultinitialize, security, ansible, molecule, tox, playbook
