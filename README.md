@@ -1,4 +1,4 @@
-# Ansible role [vault_initialize](#vault_initialize)
+# [Ansible role vault_initialize](#vault_initialize)
 
 Initialize and unseal HashiCorp Vault.
 
