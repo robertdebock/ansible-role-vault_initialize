@@ -1,8 +1,8 @@
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: robertdebock.bootstrap
@@ -13,7 +13,7 @@
       vault_configuration_listener_tcp:
         address: "127.0.0.1:8200"
         cluster_address: "127.0.0.1:8201"
-        tls_disable: yes
+        tls_disable: true
       vault_configuration_storage_raft:
         path: "/opt/vault/data"
         node_id: "{{ ansible_hostname }}"

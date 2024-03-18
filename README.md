@@ -14,8 +14,8 @@ This example is taken from [`molecule/default/converge.yml`](https://github.com/
 ---
 - name: Converge
   hosts: all
-  become: yes
-  gather_facts: yes
+  become: true
+  gather_facts: true
 
   roles:
     - role: robertdebock.vault_initialize
@@ -27,8 +27,8 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
 ---
 - name: Prepare
   hosts: all
-  become: yes
-  gather_facts: no
+  become: true
+  gather_facts: false
 
   roles:
     - role: robertdebock.bootstrap
@@ -39,7 +39,7 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
       vault_configuration_listener_tcp:
         address: "127.0.0.1:8200"
         cluster_address: "127.0.0.1:8201"
-        tls_disable: yes
+        tls_disable: true
       vault_configuration_storage_raft:
         path: "/opt/vault/data"
         node_id: "{{ ansible_hostname }}"
@@ -59,7 +59,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 vault_initialize_addr: "http://localhost:8200"
 
 # You can show the (sensitive) information of initializing Vault. This includes the root-token and unseal-keys.
-vault_initialize_show_information: yes
+vault_initialize_show_information: true
 ```
 
 ## [Requirements](#requirements)
