@@ -94,7 +94,7 @@ This role has been tested on these [container images](https://hub.docker.com/u/r
 |---------|----|
 |[Amazon](https://hub.docker.com/r/robertdebock/amazonlinux)|Candidate|
 |[Debian](https://hub.docker.com/r/robertdebock/debian)|all|
-|[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|all|
+|[EL](https://hub.docker.com/r/robertdebock/enterpriselinux)|9|
 |[Fedora](https://hub.docker.com/r/robertdebock/fedora)|37, 38|
 |[Ubuntu](https://hub.docker.com/r/robertdebock/ubuntu)|all|
 
