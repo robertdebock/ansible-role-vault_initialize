@@ -57,7 +57,7 @@ The default values for the variables are set in [`defaults/main.yml`](https://gi
 # defaults file for vault_initialize
 
 # The address where Vault can be found. Simiar to `VAULT_ADDR`.
-vault_initialize_addr: "http://localhost:8200"
+vault_initialize_addr: "https://localhost:8200"
 
 # You can show the (sensitive) information of initializing Vault. This includes the root-token and unseal-keys.
 vault_initialize_show_information: true
