@@ -6,3 +6,4 @@
 
   roles:
     - role: ansible-role-vault_initialize
+      vault_tls_skip_verify: true
