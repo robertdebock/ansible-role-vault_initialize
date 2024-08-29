@@ -35,6 +35,7 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
     - role: robertdebock.core_dependencies
     - role: robertdebock.hashicorp
     - role: robertdebock.vault
+      vault_hardening_disable_swap: false
     - role: robertdebock.vault_configuration
       vault_configuration_listener_tcp:
         address: "127.0.0.1:8200"
