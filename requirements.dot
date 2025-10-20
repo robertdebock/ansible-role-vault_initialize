@@ -1,0 +1,19 @@
+digraph PhiloDilemma {
+  label = "Robert de Bock" ;
+  overlap=false
+  {
+    "vault_initialize" [fillcolor=yellow style=filled penwidth=3]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.bootstrap" [fillcolor=green style=filled]
+    "robertdebock.core_dependencies" [fillcolor=green style=filled]
+    "robertdebock.hashicorp" [fillcolor=green style=filled]
+    "robertdebock.vault" [fillcolor=green style=filled]
+    "robertdebock.vault_configuration" [fillcolor=green style=filled]
+  }
+  "vault_initialize" -> "robertdebock.bootstrap"
+  "vault_initialize" -> "robertdebock.bootstrap"
+  "vault_initialize" -> "robertdebock.core_dependencies"
+  "vault_initialize" -> "robertdebock.hashicorp"
+  "vault_initialize" -> "robertdebock.vault"
+  "vault_initialize" -> "robertdebock.vault_configuration"
+}
