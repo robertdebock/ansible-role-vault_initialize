@@ -44,7 +44,7 @@ The machine needs to be prepared. In CI this is done using [`molecule/default/pr
         tls_disable: true
       vault_configuration_storage_raft:
         path: "/opt/vault/data"
-        node_id: "{{ ansible_hostname }}"
+        node_id: "{{ ansible_facts['hostname'] }}"
 ```
 
 Also see a [full explanation and example](https://robertdebock.nl/how-to-use-these-roles.html) on how to use these roles.
