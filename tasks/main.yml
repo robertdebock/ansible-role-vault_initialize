@@ -16,7 +16,8 @@
         VAULT_ADDR: "{{ vault_initialize_addr }}"
         VAULT_SKIP_VERIFY: "{{ vault_tls_skip_verify }}"
       register: vault_initialize_status_raw
-      changed_when: false
+      changed_when:
+        - false
       run_once: true
   rescue:
     - name: Inform user of non-critical error
@@ -37,7 +38,8 @@
   register: vault_initialize_raw
   when:
     - not vault_initialize_status.initialized
-  changed_when: true
+  changed_when:
+    - true
   run_once: true
 
 - name: Store vault_initialize_raw output as YAML
@@ -71,7 +73,8 @@
   when:
     - vault_initialize_status.sealed
     - vault_initialize_status.type == "shamir"
-  changed_when: true
+  changed_when:
+    - true
 
 - name: Show initialize information
   when:
